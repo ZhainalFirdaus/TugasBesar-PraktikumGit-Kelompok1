@@ -3,10 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Company Profile Kelompok</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 15px 0;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+                        url('https://picsum.photos/1600/800');
+            background-size: cover;
+            background-position: center;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 90px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+        }
+
+        /* Anggota Section */
+        .anggota {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .anggota h2 {
+            margin-bottom: 30px;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #f4f4f4;
+            padding: 20px;
+            width: 250px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #111;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Profil Kelompok</div>
+            <nav>
+                <ul>
+                    <li><a href="#anggota">Anggota</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div>
+            <h1>Website Profil Kelompok</h1>
+            <p>Tugas Besar Praktikum Version Control</p>
+        </div>
+    </section>
+
+    <!-- Anggota -->
+    <section class="anggota" id="anggota">
+        <h2>Anggota Kelompok 1</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>Nama Anggota 1</h3>
+                <p>NIM: 3012200XX</p>
+            </div>
+
+            <div class="card">
+                <h3>Nama Anggota 2</h3>
+                <p>NIM: 3012200XX</p>
+            </div>
+
+            <div class="card">
+                <h3>Nama Anggota 3</h3>
+                <p>NIM: 3012200XX</p>
+            </div>
+
+            <div class="card">
+                <h3>Nama Anggota 4</h3>
+                <p>NIM: 3012200XX</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Kelompok Kami</p>
+    </footer>
+
 </body>
 </html>
